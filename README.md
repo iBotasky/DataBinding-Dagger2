@@ -1,1 +1,1 @@
-This is a demo of how to user DataBinding and Dagger2
+This is a simple demo of how to user DataBinding and Dagger2
