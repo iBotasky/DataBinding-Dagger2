@@ -15,8 +15,8 @@ import dagger.Subcomponent;
  */
 
 @ActivityScope
-//@Component(dependencies = RepositoryComponent.class, modules = ActivityModule.class)
-@Subcomponent
+@Component(dependencies = RepositoryComponent.class, modules = ActivityModule.class)
+//@Subcomponent
 public interface ActivityComponent {
     void inject(MainActivity mainActivity);
 }

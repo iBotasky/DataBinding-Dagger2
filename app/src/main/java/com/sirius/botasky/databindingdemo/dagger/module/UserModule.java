@@ -6,6 +6,8 @@ import com.sirius.botasky.databindingdemo.MyApplication;
 import com.sirius.botasky.databindingdemo.R;
 import com.sirius.botasky.databindingdemo.entity.User;
 
+import javax.inject.Singleton;
+
 import dagger.Module;
 import dagger.Provides;
 
@@ -36,4 +38,9 @@ public class UserModule {
 //        Log.e("Name" , " " + application.getPackageName());
 //        return application.getPackageName();
 //    }
+    @Singleton
+    @Provides
+    public User provideUser(){
+        return new User("RootUser");
+    }
 }

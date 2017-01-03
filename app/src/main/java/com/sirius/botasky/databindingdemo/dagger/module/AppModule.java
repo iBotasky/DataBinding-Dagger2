@@ -46,8 +46,5 @@ public final class AppModule {
         return this.application.getApplicationContext();
     }
 
-    @Provides
-    public User provideUser(){
-        return new User("RootUser");
-    }
+
 }

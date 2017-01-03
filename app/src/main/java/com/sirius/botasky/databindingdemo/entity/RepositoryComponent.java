@@ -23,5 +23,12 @@ public interface RepositoryComponent {
     //    @ForApplication
     //    MyApplication getApplication();
     **/
-    ActivityComponent activityComponent();
+//    ActivityComponent activityComponent();
+
+    User getUser();
+
+    @ForApplication
+    MyApplication getApplication();
+
+    Repository getRepository();
 }
